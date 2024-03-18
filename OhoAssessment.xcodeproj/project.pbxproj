@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB84408B2BA765A100111F44 /* OhoAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB84408A2BA765A100111F44 /* OhoAssessmentApp.swift */; };
+		BB84408D2BA765A100111F44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB84408C2BA765A100111F44 /* ContentView.swift */; };
+		BB84408F2BA765A200111F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB84408E2BA765A200111F44 /* Assets.xcassets */; };
+		BB8440922BA765A200111F44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8440912BA765A200111F44 /* Preview Assets.xcassets */; };
+		BB84409C2BA765A200111F44 /* OhoAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB84409B2BA765A200111F44 /* OhoAssessmentTests.swift */; };
+		BB8440A62BA765A200111F44 /* OhoAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440A52BA765A200111F44 /* OhoAssessmentUITests.swift */; };
+		BB8440A82BA765A200111F44 /* OhoAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440A72BA765A200111F44 /* OhoAssessmentUITestsLaunchTests.swift */; };
+		BB8440BB2BA8C55B00111F44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BB8440BA2BA8C55B00111F44 /* Alamofire */; };
+		BB8440BD2BA8C55B00111F44 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BB8440BC2BA8C55B00111F44 /* AlamofireDynamic */; };
+		BB8440C02BA8C6FC00111F44 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BB8440BF2BA8C6FC00111F44 /* Toast */; };
+		BB8440C22BA8C79800111F44 /* ChatRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440C12BA8C79800111F44 /* ChatRoomModel.swift */; };
+		BB8440C42BA8C84800111F44 /* ChatHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440C32BA8C84800111F44 /* ChatHistoryModel.swift */; };
+		BB8440C62BA8C96C00111F44 /* QRCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440C52BA8C96C00111F44 /* QRCodeModel.swift */; };
+		BB8440CA2BA8D0C700111F44 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440C92BA8D0C700111F44 /* NetworkManager.swift */; };
+		BB8440CC2BA8D0EE00111F44 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440CB2BA8D0EE00111F44 /* NetworkError.swift */; };
+		BB8440CE2BA8D61E00111F44 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440CD2BA8D61E00111F44 /* BaseRequest.swift */; };
+		BB8440D02BA8E22200111F44 /* ChatServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440CF2BA8E22200111F44 /* ChatServices.swift */; };
+		BB8440D32BA8E27200111F44 /* ChatRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440D22BA8E27200111F44 /* ChatRoutes.swift */; };
+		BB8440D72BA8E7AC00111F44 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440D62BA8E7AC00111F44 /* Constant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB8440982BA765A200111F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB84407F2BA765A100111F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB8440862BA765A100111F44;
+			remoteInfo = OhoAssessment;
+		};
+		BB8440A22BA765A200111F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB84407F2BA765A100111F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB8440862BA765A100111F44;
+			remoteInfo = OhoAssessment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB8440872BA765A100111F44 /* OhoAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OhoAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB84408A2BA765A100111F44 /* OhoAssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhoAssessmentApp.swift; sourceTree = "<group>"; };
+		BB84408C2BA765A100111F44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB84408E2BA765A200111F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB8440912BA765A200111F44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB8440972BA765A200111F44 /* OhoAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhoAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB84409B2BA765A200111F44 /* OhoAssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhoAssessmentTests.swift; sourceTree = "<group>"; };
+		BB8440A12BA765A200111F44 /* OhoAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhoAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8440A52BA765A200111F44 /* OhoAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhoAssessmentUITests.swift; sourceTree = "<group>"; };
+		BB8440A72BA765A200111F44 /* OhoAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhoAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB8440C12BA8C79800111F44 /* ChatRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomModel.swift; sourceTree = "<group>"; };
+		BB8440C32BA8C84800111F44 /* ChatHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryModel.swift; sourceTree = "<group>"; };
+		BB8440C52BA8C96C00111F44 /* QRCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeModel.swift; sourceTree = "<group>"; };
+		BB8440C92BA8D0C700111F44 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BB8440CB2BA8D0EE00111F44 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BB8440CD2BA8D61E00111F44 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		BB8440CF2BA8E22200111F44 /* ChatServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServices.swift; sourceTree = "<group>"; };
+		BB8440D22BA8E27200111F44 /* ChatRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoutes.swift; sourceTree = "<group>"; };
+		BB8440D62BA8E7AC00111F44 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB8440842BA765A100111F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8440C02BA8C6FC00111F44 /* Toast in Frameworks */,
+				BB8440BB2BA8C55B00111F44 /* Alamofire in Frameworks */,
+				BB8440BD2BA8C55B00111F44 /* AlamofireDynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8440942BA765A200111F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB84409E2BA765A200111F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB84407E2BA765A100111F44 = {
+			isa = PBXGroup;
+			children = (
+				BB8440892BA765A100111F44 /* OhoAssessment */,
+				BB84409A2BA765A200111F44 /* OhoAssessmentTests */,
+				BB8440A42BA765A200111F44 /* OhoAssessmentUITests */,
+				BB8440882BA765A100111F44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8440882BA765A100111F44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440872BA765A100111F44 /* OhoAssessment.app */,
+				BB8440972BA765A200111F44 /* OhoAssessmentTests.xctest */,
+				BB8440A12BA765A200111F44 /* OhoAssessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB8440892BA765A100111F44 /* OhoAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				BB84408A2BA765A100111F44 /* OhoAssessmentApp.swift */,
+				BB84408C2BA765A100111F44 /* ContentView.swift */,
+				BB8440B72BA8BE9B00111F44 /* Views */,
+				BB8440B62BA8BE8D00111F44 /* ViewModel */,
+				BB8440B42BA8BE6300111F44 /* Model */,
+				BB8440C72BA8CB7900111F44 /* Networking */,
+				BB8440B52BA8BE6F00111F44 /* Services */,
+				BB8440B82BA8BEB200111F44 /* Resources */,
+				BB8440902BA765A200111F44 /* Preview Content */,
+			);
+			path = OhoAssessment;
+			sourceTree = "<group>";
+		};
+		BB8440902BA765A200111F44 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440912BA765A200111F44 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB84409A2BA765A200111F44 /* OhoAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB84409B2BA765A200111F44 /* OhoAssessmentTests.swift */,
+			);
+			path = OhoAssessmentTests;
+			sourceTree = "<group>";
+		};
+		BB8440A42BA765A200111F44 /* OhoAssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440A52BA765A200111F44 /* OhoAssessmentUITests.swift */,
+				BB8440A72BA765A200111F44 /* OhoAssessmentUITestsLaunchTests.swift */,
+			);
+			path = OhoAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		BB8440B42BA8BE6300111F44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440C12BA8C79800111F44 /* ChatRoomModel.swift */,
+				BB8440C32BA8C84800111F44 /* ChatHistoryModel.swift */,
+				BB8440C52BA8C96C00111F44 /* QRCodeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB8440B52BA8BE6F00111F44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440D12BA8E26300111F44 /* Routes */,
+				BB8440CF2BA8E22200111F44 /* ChatServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BB8440B62BA8BE8D00111F44 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB8440B72BA8BE9B00111F44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB8440B82BA8BEB200111F44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440D52BA8E7A000111F44 /* Global */,
+				BB84408E2BA765A200111F44 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB8440C72BA8CB7900111F44 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440C92BA8D0C700111F44 /* NetworkManager.swift */,
+				BB8440CD2BA8D61E00111F44 /* BaseRequest.swift */,
+				BB8440CB2BA8D0EE00111F44 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BB8440D12BA8E26300111F44 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440D22BA8E27200111F44 /* ChatRoutes.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		BB8440D52BA8E7A000111F44 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				BB8440D62BA8E7AC00111F44 /* Constant.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8440862BA765A100111F44 /* OhoAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8440AB2BA765A200111F44 /* Build configuration list for PBXNativeTarget "OhoAssessment" */;
+			buildPhases = (
+				BB8440832BA765A100111F44 /* Sources */,
+				BB8440842BA765A100111F44 /* Frameworks */,
+				BB8440852BA765A100111F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OhoAssessment;
+			packageProductDependencies = (
+				BB8440BA2BA8C55B00111F44 /* Alamofire */,
+				BB8440BC2BA8C55B00111F44 /* AlamofireDynamic */,
+				BB8440BF2BA8C6FC00111F44 /* Toast */,
+			);
+			productName = OhoAssessment;
+			productReference = BB8440872BA765A100111F44 /* OhoAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB8440962BA765A200111F44 /* OhoAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8440AE2BA765A200111F44 /* Build configuration list for PBXNativeTarget "OhoAssessmentTests" */;
+			buildPhases = (
+				BB8440932BA765A200111F44 /* Sources */,
+				BB8440942BA765A200111F44 /* Frameworks */,
+				BB8440952BA765A200111F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8440992BA765A200111F44 /* PBXTargetDependency */,
+			);
+			name = OhoAssessmentTests;
+			productName = OhoAssessmentTests;
+			productReference = BB8440972BA765A200111F44 /* OhoAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB8440A02BA765A200111F44 /* OhoAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8440B12BA765A200111F44 /* Build configuration list for PBXNativeTarget "OhoAssessmentUITests" */;
+			buildPhases = (
+				BB84409D2BA765A200111F44 /* Sources */,
+				BB84409E2BA765A200111F44 /* Frameworks */,
+				BB84409F2BA765A200111F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8440A32BA765A200111F44 /* PBXTargetDependency */,
+			);
+			name = OhoAssessmentUITests;
+			productName = OhoAssessmentUITests;
+			productReference = BB8440A12BA765A200111F44 /* OhoAssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB84407F2BA765A100111F44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					BB8440862BA765A100111F44 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					BB8440962BA765A200111F44 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BB8440862BA765A100111F44;
+					};
+					BB8440A02BA765A200111F44 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BB8440862BA765A100111F44;
+					};
+				};
+			};
+			buildConfigurationList = BB8440822BA765A100111F44 /* Build configuration list for PBXProject "OhoAssessment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB84407E2BA765A100111F44;
+			packageReferences = (
+				BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BB8440BE2BA8C6FC00111F44 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
+			productRefGroup = BB8440882BA765A100111F44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8440862BA765A100111F44 /* OhoAssessment */,
+				BB8440962BA765A200111F44 /* OhoAssessmentTests */,
+				BB8440A02BA765A200111F44 /* OhoAssessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB8440852BA765A100111F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8440922BA765A200111F44 /* Preview Assets.xcassets in Resources */,
+				BB84408F2BA765A200111F44 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8440952BA765A200111F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB84409F2BA765A200111F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB8440832BA765A100111F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8440CE2BA8D61E00111F44 /* BaseRequest.swift in Sources */,
+				BB8440CA2BA8D0C700111F44 /* NetworkManager.swift in Sources */,
+				BB8440CC2BA8D0EE00111F44 /* NetworkError.swift in Sources */,
+				BB84408D2BA765A100111F44 /* ContentView.swift in Sources */,
+				BB8440D02BA8E22200111F44 /* ChatServices.swift in Sources */,
+				BB8440C42BA8C84800111F44 /* ChatHistoryModel.swift in Sources */,
+				BB8440C62BA8C96C00111F44 /* QRCodeModel.swift in Sources */,
+				BB84408B2BA765A100111F44 /* OhoAssessmentApp.swift in Sources */,
+				BB8440D72BA8E7AC00111F44 /* Constant.swift in Sources */,
+				BB8440C22BA8C79800111F44 /* ChatRoomModel.swift in Sources */,
+				BB8440D32BA8E27200111F44 /* ChatRoutes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8440932BA765A200111F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB84409C2BA765A200111F44 /* OhoAssessmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB84409D2BA765A200111F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8440A62BA765A200111F44 /* OhoAssessmentUITests.swift in Sources */,
+				BB8440A82BA765A200111F44 /* OhoAssessmentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB8440992BA765A200111F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB8440862BA765A100111F44 /* OhoAssessment */;
+			targetProxy = BB8440982BA765A200111F44 /* PBXContainerItemProxy */;
+		};
+		BB8440A32BA765A200111F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB8440862BA765A100111F44 /* OhoAssessment */;
+			targetProxy = BB8440A22BA765A200111F44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB8440A92BA765A200111F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB8440AA2BA765A200111F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB8440AC2BA765A200111F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OhoAssessment/Preview Content\"";
+				DEVELOPMENT_TEAM = 3MKH3KBY58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawonreja.OhoAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB8440AD2BA765A200111F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OhoAssessment/Preview Content\"";
+				DEVELOPMENT_TEAM = 3MKH3KBY58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawonreja.OhoAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB8440AF2BA765A200111F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MKH3KBY58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawonreja.OhoAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OhoAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OhoAssessment";
+			};
+			name = Debug;
+		};
+		BB8440B02BA765A200111F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MKH3KBY58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawonreja.OhoAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OhoAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OhoAssessment";
+			};
+			name = Release;
+		};
+		BB8440B22BA765A200111F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MKH3KBY58;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawonreja.OhoAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OhoAssessment;
+			};
+			name = Debug;
+		};
+		BB8440B32BA765A200111F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MKH3KBY58;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawonreja.OhoAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OhoAssessment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB8440822BA765A100111F44 /* Build configuration list for PBXProject "OhoAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8440A92BA765A200111F44 /* Debug */,
+				BB8440AA2BA765A200111F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8440AB2BA765A200111F44 /* Build configuration list for PBXNativeTarget "OhoAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8440AC2BA765A200111F44 /* Debug */,
+				BB8440AD2BA765A200111F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8440AE2BA765A200111F44 /* Build configuration list for PBXNativeTarget "OhoAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8440AF2BA765A200111F44 /* Debug */,
+				BB8440B02BA765A200111F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8440B12BA765A200111F44 /* Build configuration list for PBXNativeTarget "OhoAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8440B22BA765A200111F44 /* Debug */,
+				BB8440B32BA765A200111F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+		BB8440BE2BA8C6FC00111F44 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB8440BA2BA8C55B00111F44 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BB8440BC2BA8C55B00111F44 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		BB8440BF2BA8C6FC00111F44 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB8440BE2BA8C6FC00111F44 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BB84407F2BA765A100111F44 /* Project object */;
+}

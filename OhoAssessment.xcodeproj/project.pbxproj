@@ -16,7 +16,6 @@
 		BB8440A82BA765A200111F44 /* OhoAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440A72BA765A200111F44 /* OhoAssessmentUITestsLaunchTests.swift */; };
 		BB8440BB2BA8C55B00111F44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BB8440BA2BA8C55B00111F44 /* Alamofire */; };
 		BB8440BD2BA8C55B00111F44 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BB8440BC2BA8C55B00111F44 /* AlamofireDynamic */; };
-		BB8440C02BA8C6FC00111F44 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BB8440BF2BA8C6FC00111F44 /* Toast */; };
 		BB8440C22BA8C79800111F44 /* ChatRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440C12BA8C79800111F44 /* ChatRoomModel.swift */; };
 		BB8440C42BA8C84800111F44 /* ChatHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440C32BA8C84800111F44 /* ChatHistoryModel.swift */; };
 		BB8440C62BA8C96C00111F44 /* QRCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440C52BA8C96C00111F44 /* QRCodeModel.swift */; };
@@ -26,6 +25,18 @@
 		BB8440D02BA8E22200111F44 /* ChatServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440CF2BA8E22200111F44 /* ChatServices.swift */; };
 		BB8440D32BA8E27200111F44 /* ChatRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440D22BA8E27200111F44 /* ChatRoutes.swift */; };
 		BB8440D72BA8E7AC00111F44 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8440D62BA8E7AC00111F44 /* Constant.swift */; };
+		BBB010A32BAA21F700D69435 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB010A22BAA21F700D69435 /* ChatRoomView.swift */; };
+		BBB010A72BAA26DA00D69435 /* PTSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBB010A62BAA24E400D69435 /* PTSansBold.ttf */; };
+		BBB010A82BAA26DE00D69435 /* PTSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBB010A52BAA24E400D69435 /* PTSansRegular.ttf */; };
+		BBB010AA2BAA276800D69435 /* CircularStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBB010A92BAA275C00D69435 /* CircularStd-Bold.ttf */; };
+		BBB010AD2BAA2C0D00D69435 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB010AC2BAA2C0D00D69435 /* ChatRoomViewModel.swift */; };
+		BBB010B02BAA302100D69435 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB010AF2BAA302100D69435 /* EmptyView.swift */; };
+		BBB010B42BAA319C00D69435 /* ChatRoomViewDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB010B32BAA319C00D69435 /* ChatRoomViewDI.swift */; };
+		BBB010B62BAA33AC00D69435 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB010B52BAA33AC00D69435 /* Logger.swift */; };
+		BBB010BB2BAA35E500D69435 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = BBB010BA2BAA35E500D69435 /* AlertToast */; };
+		BBB010BD2BAA368500D69435 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB010BC2BAA368500D69435 /* LoadingView.swift */; };
+		BBB010C02BAA37C500D69435 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BBB010BF2BAA37C500D69435 /* SDWebImageSwiftUI */; };
+		BBB010C22BAA3D5D00D69435 /* ChatRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB010C12BAA3D5D00D69435 /* ChatRoomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +76,17 @@
 		BB8440CF2BA8E22200111F44 /* ChatServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServices.swift; sourceTree = "<group>"; };
 		BB8440D22BA8E27200111F44 /* ChatRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoutes.swift; sourceTree = "<group>"; };
 		BB8440D62BA8E7AC00111F44 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		BBB010A22BAA21F700D69435 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
+		BBB010A52BAA24E400D69435 /* PTSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTSansRegular.ttf; sourceTree = "<group>"; };
+		BBB010A62BAA24E400D69435 /* PTSansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTSansBold.ttf; sourceTree = "<group>"; };
+		BBB010A92BAA275C00D69435 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.ttf"; sourceTree = "<group>"; };
+		BBB010AB2BAA280200D69435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BBB010AC2BAA2C0D00D69435 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
+		BBB010AF2BAA302100D69435 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		BBB010B32BAA319C00D69435 /* ChatRoomViewDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewDI.swift; sourceTree = "<group>"; };
+		BBB010B52BAA33AC00D69435 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BBB010BC2BAA368500D69435 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		BBB010C12BAA3D5D00D69435 /* ChatRoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB8440C02BA8C6FC00111F44 /* Toast in Frameworks */,
+				BBB010C02BAA37C500D69435 /* SDWebImageSwiftUI in Frameworks */,
+				BBB010BB2BAA35E500D69435 /* AlertToast in Frameworks */,
 				BB8440BB2BA8C55B00111F44 /* Alamofire in Frameworks */,
 				BB8440BD2BA8C55B00111F44 /* AlamofireDynamic in Frameworks */,
 			);
@@ -118,6 +141,7 @@
 		BB8440892BA765A100111F44 /* OhoAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				BBB010AB2BAA280200D69435 /* Info.plist */,
 				BB84408A2BA765A100111F44 /* OhoAssessmentApp.swift */,
 				BB84408C2BA765A100111F44 /* ContentView.swift */,
 				BB8440B72BA8BE9B00111F44 /* Views */,
@@ -125,6 +149,7 @@
 				BB8440B42BA8BE6300111F44 /* Model */,
 				BB8440C72BA8CB7900111F44 /* Networking */,
 				BB8440B52BA8BE6F00111F44 /* Services */,
+				BBB010B22BAA317A00D69435 /* DependencyInjectors */,
 				BB8440B82BA8BEB200111F44 /* Resources */,
 				BB8440902BA765A200111F44 /* Preview Content */,
 			);
@@ -178,6 +203,7 @@
 		BB8440B62BA8BE8D00111F44 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BBB010AC2BAA2C0D00D69435 /* ChatRoomViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -185,6 +211,10 @@
 		BB8440B72BA8BE9B00111F44 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BBB010A22BAA21F700D69435 /* ChatRoomView.swift */,
+				BBB010AF2BAA302100D69435 /* EmptyView.swift */,
+				BBB010BC2BAA368500D69435 /* LoadingView.swift */,
+				BBB010C12BAA3D5D00D69435 /* ChatRoomCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +222,7 @@
 		BB8440B82BA8BEB200111F44 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BBB010A42BAA24C800D69435 /* Fonts */,
 				BB8440D52BA8E7A000111F44 /* Global */,
 				BB84408E2BA765A200111F44 /* Assets.xcassets */,
 			);
@@ -220,8 +251,27 @@
 			isa = PBXGroup;
 			children = (
 				BB8440D62BA8E7AC00111F44 /* Constant.swift */,
+				BBB010B52BAA33AC00D69435 /* Logger.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		BBB010A42BAA24C800D69435 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BBB010A62BAA24E400D69435 /* PTSansBold.ttf */,
+				BBB010A52BAA24E400D69435 /* PTSansRegular.ttf */,
+				BBB010A92BAA275C00D69435 /* CircularStd-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BBB010B22BAA317A00D69435 /* DependencyInjectors */ = {
+			isa = PBXGroup;
+			children = (
+				BBB010B32BAA319C00D69435 /* ChatRoomViewDI.swift */,
+			);
+			path = DependencyInjectors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +293,8 @@
 			packageProductDependencies = (
 				BB8440BA2BA8C55B00111F44 /* Alamofire */,
 				BB8440BC2BA8C55B00111F44 /* AlamofireDynamic */,
-				BB8440BF2BA8C6FC00111F44 /* Toast */,
+				BBB010BA2BAA35E500D69435 /* AlertToast */,
+				BBB010BF2BAA37C500D69435 /* SDWebImageSwiftUI */,
 			);
 			productName = OhoAssessment;
 			productReference = BB8440872BA765A100111F44 /* OhoAssessment.app */;
@@ -319,7 +370,8 @@
 			mainGroup = BB84407E2BA765A100111F44;
 			packageReferences = (
 				BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				BB8440BE2BA8C6FC00111F44 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				BBB010B92BAA35E500D69435 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				BBB010BE2BAA37C500D69435 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = BB8440882BA765A100111F44 /* Products */;
 			projectDirPath = "";
@@ -337,8 +389,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB010AA2BAA276800D69435 /* CircularStd-Bold.ttf in Resources */,
+				BBB010A82BAA26DE00D69435 /* PTSansRegular.ttf in Resources */,
 				BB8440922BA765A200111F44 /* Preview Assets.xcassets in Resources */,
 				BB84408F2BA765A200111F44 /* Assets.xcassets in Resources */,
+				BBB010A72BAA26DA00D69435 /* PTSansBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,12 +422,19 @@
 				BB8440CA2BA8D0C700111F44 /* NetworkManager.swift in Sources */,
 				BB8440CC2BA8D0EE00111F44 /* NetworkError.swift in Sources */,
 				BB84408D2BA765A100111F44 /* ContentView.swift in Sources */,
+				BBB010BD2BAA368500D69435 /* LoadingView.swift in Sources */,
 				BB8440D02BA8E22200111F44 /* ChatServices.swift in Sources */,
+				BBB010AD2BAA2C0D00D69435 /* ChatRoomViewModel.swift in Sources */,
+				BBB010A32BAA21F700D69435 /* ChatRoomView.swift in Sources */,
+				BBB010B62BAA33AC00D69435 /* Logger.swift in Sources */,
 				BB8440C42BA8C84800111F44 /* ChatHistoryModel.swift in Sources */,
+				BBB010C22BAA3D5D00D69435 /* ChatRoomCell.swift in Sources */,
 				BB8440C62BA8C96C00111F44 /* QRCodeModel.swift in Sources */,
 				BB84408B2BA765A100111F44 /* OhoAssessmentApp.swift in Sources */,
+				BBB010B42BAA319C00D69435 /* ChatRoomViewDI.swift in Sources */,
 				BB8440D72BA8E7AC00111F44 /* Constant.swift in Sources */,
 				BB8440C22BA8C79800111F44 /* ChatRoomModel.swift in Sources */,
+				BBB010B02BAA302100D69435 /* EmptyView.swift in Sources */,
 				BB8440D32BA8E27200111F44 /* ChatRoutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +602,7 @@
 				DEVELOPMENT_TEAM = 3MKH3KBY58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OhoAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -569,6 +632,7 @@
 				DEVELOPMENT_TEAM = 3MKH3KBY58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OhoAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -713,12 +777,20 @@
 				minimumVersion = 5.9.0;
 			};
 		};
-		BB8440BE2BA8C6FC00111F44 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+		BBB010B92BAA35E500D69435 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		BBB010BE2BAA37C500D69435 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.0;
+				minimumVersion = 3.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -734,10 +806,15 @@
 			package = BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
 		};
-		BB8440BF2BA8C6FC00111F44 /* Toast */ = {
+		BBB010BA2BAA35E500D69435 /* AlertToast */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BB8440BE2BA8C6FC00111F44 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
-			productName = Toast;
+			package = BBB010B92BAA35E500D69435 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+		BBB010BF2BAA37C500D69435 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBB010BE2BAA37C500D69435 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

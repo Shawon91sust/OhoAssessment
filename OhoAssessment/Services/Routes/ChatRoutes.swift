@@ -14,14 +14,14 @@ enum ChatRoutes: BaseRequest {
     case chatHistory(id: Int)
     case chatQRCode(id: Int)
     
-    var baseURL : String {""}
+    var baseURL : String {Constants.baseURL}
     var path: String {
         switch self {
         case .chatRoom:
             return "/chat/rooms"
-        case .chatHistory(let id):
+        case .chatHistory(_):
             return "/chat/history"
-        case .chatQRCode(let id):
+        case .chatQRCode(_):
             return "/match/get_qr_code"
         }
     }
@@ -30,7 +30,7 @@ enum ChatRoutes: BaseRequest {
         switch self {
         case .chatRoom:
             return .get
-        case .chatHistory(let id), .chatQRCode(let id):
+        case .chatHistory(_), .chatQRCode(_):
             return .get
         }
     }
@@ -48,7 +48,7 @@ enum ChatRoutes: BaseRequest {
         switch self {
         case .chatRoom:
             return nil
-        case .chatHistory(let id), .chatQRCode(let id):
+        case .chatHistory(_), .chatQRCode(_):
             return nil
         }
     }
@@ -56,9 +56,9 @@ enum ChatRoutes: BaseRequest {
     var headers: Alamofire.HTTPHeaders? {
         switch self {
         case .chatRoom:
-            return [.authorization(Constants.baseURL)]
-        case .chatHistory(let id), .chatQRCode(let id):
-            return [.authorization(Constants.baseURL)]
+            return [.authorization(Constants.authToken)]
+        case .chatHistory(_), .chatQRCode(_):
+            return [.authorization(Constants.authToken)]
         }
     }
     

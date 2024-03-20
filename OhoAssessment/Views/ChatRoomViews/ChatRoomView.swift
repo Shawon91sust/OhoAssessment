@@ -12,9 +12,7 @@ struct ChatRoomView: View {
     @ObservedObject var viewModel: ChatRoomViewModel
     
     var body: some View {
-        ZStack {
-            Color(.systemBackground)
-                .ignoresSafeArea()
+        
             VStack {
                 //Navigation Title
                 VStack {
@@ -53,48 +51,11 @@ struct ChatRoomView: View {
                     }
                 }
                 
-                
-//                switch viewModel.state {
-//                case .idle:
-//                    IdleView()
-//                        .onAppear {
-//                            viewModel.listenToSearch()
-//                        }
-//                case .loading:
-//                    ProgressView()
-//                case .failed(let error):
-//                    ErrorView(error: error)
-//                case .loaded(let repos):
-//                    List {
-//                        // go back button
-//                        if viewModel.currentPage > 1 {
-//                            Button {
-//                                viewModel.currentPage -= 1
-//                                viewModel.fetchRepos()
-//                            } label: {
-//                                Text("Go back")
-//                            }
-//                        }
-//                        // main list
-//                        ForEach(repos) { repo in
-//                            NavigationLink(destination: WebView(url: URL(string: repo.htmlURL)!)) {
-//                                RepoListRow(repo: repo)
-//                            }
-//                            .isDetailLink(false)
-//                        }
-//                        
-//
-//                    }
-//                } 
-//
-//            }
-                
                 Spacer()
             }
-        }
-        .onAppear{
-            viewModel.fetchChatRooms()
-        }
+            .onAppear{
+                viewModel.fetchChatRooms()
+            }
         
     }
 }

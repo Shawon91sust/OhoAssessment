@@ -23,7 +23,7 @@ struct ChatHistory: Codable {
     }
 }
 
-struct ChatMessage: Codable {
+struct ChatMessage: Codable, Identifiable {
     let id: Int
     let body: String
     let sender, chatID: Int

@@ -1,5 +1,5 @@
 //
-//  EmptyView.swift
+//  InfoView.swift
 //  OhoAssessment
 //
 //  Created by Shawon Rejaul on 20/3/24.

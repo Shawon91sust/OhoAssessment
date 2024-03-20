@@ -11,7 +11,8 @@ import SwiftUI
 struct OhoAssessmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ChatRoomViewDI().chatRoomView
+            //ChatRoomViewDI().chatRoomView
+            ChatHistoryViewDI().chatHistoryView
         }
     }
 }

@@ -35,6 +35,8 @@ class ChatAPI: ChatServices {
     
     func getChatHistory(id: Int) -> AnyPublisher<Alamofire.DataResponse<ChatHistoryModel, NetworkError>, Never> {
         let route = ChatRoutes.chatHistory(id: id)
+        print(route.buildURL())
+        
         return NetworkManager
             .request(route)
             .publishDecodable(type: ChatHistoryModel.self)

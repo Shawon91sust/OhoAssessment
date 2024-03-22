@@ -8,6 +8,8 @@
 import Foundation
 
 struct ChatHistoryViewDI {
+    
+    private var chatRoomData : ChatRoomData
 
     var chatHistoryView: ChatHistoryView {
         ChatHistoryView(viewModel: chatHistoryViewModel, data: chatRoomData)
@@ -19,7 +21,9 @@ struct ChatHistoryViewDI {
         ChatAPI()
     }
     
-    private var chatRoomData: ChatRoomData {
-        ChatRoomData(id: 100, channelName: "", status: "", participants: "", createdAt: 00, blockedBy: -1, fullName: "Shawon Reja", profilePhoto: "https://oho-assets.s3.amazonaws.com/76b555042801437c9bd353debd055a8d", gender: "Male", lastMessage: "Hi how are you")
+    init(_ chatRoomData : ChatRoomData) {
+        self.chatRoomData = chatRoomData
     }
+    
+    
 }

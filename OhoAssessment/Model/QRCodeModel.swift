@@ -13,7 +13,7 @@ struct QRCodeModel: Codable {
 }
 
 // MARK: - DataClass
-struct QRCodeObject: Codable {
+struct QRCodeObject: Codable, Equatable {
     let qrCode: String
     let matchID: Int
 

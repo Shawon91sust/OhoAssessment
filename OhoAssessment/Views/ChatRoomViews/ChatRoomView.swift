@@ -10,9 +10,11 @@ import AlertToast
 
 struct ChatRoomView: View {
     @ObservedObject var viewModel: ChatRoomViewModel
+    @State private var roomData: ChatRoomData?
+    @State private var showChatHistoryView = false
     
     var body: some View {
-        
+        NavigationView {
             VStack {
                 //Navigation Title
                 VStack {
@@ -42,20 +44,36 @@ struct ChatRoomView: View {
                             ForEach(rooms) { room in
                                 ChatRoomCell(data: room) {
                                     
+                                    self.roomData = room
+                                    showChatHistoryView = true
                                 } onLongTap: {
                                     
                                 }
-
+                                
                             }
                         }
                     }
                 }
                 
                 Spacer()
+                
+                if let roomData = roomData {
+                    NavigationLink(
+                        destination: ChatHistoryViewDI(roomData).chatHistoryView,
+                        isActive: $showChatHistoryView,
+                        label: {
+                            EmptyView()
+                        })
+                    .hidden() // Hide the navigation link initially
+                }
             }
             .onAppear{
                 viewModel.fetchChatRooms()
             }
+        }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationViewStyle(.stack)
         
     }
 }

@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
 
 struct ChatRoomViewDI {
-
     var chatRoomView: ChatRoomView {
         ChatRoomView(viewModel: chatRoomViewModel)
     }

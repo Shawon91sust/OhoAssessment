@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB4C03132BACBE9600E628F6 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C03122BACBE9600E628F6 /* QRCodeView.swift */; };
+		BB4C03162BACC2A600E628F6 /* DarkerGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB4C03152BACC25A00E628F6 /* DarkerGrotesque-Regular.ttf */; };
+		BB4ECD232BACFEF700B6E930 /* QRCodeViewDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4ECD222BACFEF700B6E930 /* QRCodeViewDI.swift */; };
 		BB54D3932BAB5A6C006AA865 /* ChatNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54D3922BAB5A6C006AA865 /* ChatNavigationView.swift */; };
 		BB54D3952BAB6ADD006AA865 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB54D3942BAB6ADD006AA865 /* Colors.xcassets */; };
 		BB54D3972BAB712E006AA865 /* ChatHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54D3962BAB712E006AA865 /* ChatHistoryView.swift */; };
@@ -64,6 +67,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB4C03122BACBE9600E628F6 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		BB4C03152BACC25A00E628F6 /* DarkerGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DarkerGrotesque-Regular.ttf"; sourceTree = "<group>"; };
+		BB4ECD222BACFEF700B6E930 /* QRCodeViewDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewDI.swift; sourceTree = "<group>"; };
 		BB54D3922BAB5A6C006AA865 /* ChatNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNavigationView.swift; sourceTree = "<group>"; };
 		BB54D3942BAB6ADD006AA865 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		BB54D3962BAB712E006AA865 /* ChatHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryView.swift; sourceTree = "<group>"; };
@@ -132,6 +138,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB4C03112BACBE2500E628F6 /* QRCodeViews */ = {
+			isa = PBXGroup;
+			children = (
+				BB4C03122BACBE9600E628F6 /* QRCodeView.swift */,
+			);
+			path = QRCodeViews;
+			sourceTree = "<group>";
+		};
 		BB54D3902BAB5A05006AA865 /* ChatRoomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +259,7 @@
 		BB8440B72BA8BE9B00111F44 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB4C03112BACBE2500E628F6 /* QRCodeViews */,
 				BB54D3912BAB5A23006AA865 /* ChatViews */,
 				BB54D3902BAB5A05006AA865 /* ChatRoomViews */,
 				BBB010AF2BAA302100D69435 /* InfoView.swift */,
@@ -295,6 +310,7 @@
 		BBB010A42BAA24C800D69435 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				BB4C03152BACC25A00E628F6 /* DarkerGrotesque-Regular.ttf */,
 				BBB010A62BAA24E400D69435 /* PTSansBold.ttf */,
 				BBB010A52BAA24E400D69435 /* PTSansRegular.ttf */,
 				BBB010A92BAA275C00D69435 /* CircularStd-Bold.ttf */,
@@ -305,6 +321,7 @@
 		BBB010B22BAA317A00D69435 /* DependencyInjectors */ = {
 			isa = PBXGroup;
 			children = (
+				BB4ECD222BACFEF700B6E930 /* QRCodeViewDI.swift */,
 				BBB010B32BAA319C00D69435 /* ChatRoomViewDI.swift */,
 				BB54D39A2BAB73E5006AA865 /* ChatHistoryViewDI.swift */,
 			);
@@ -426,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4C03162BACC2A600E628F6 /* DarkerGrotesque-Regular.ttf in Resources */,
 				BBB010AA2BAA276800D69435 /* CircularStd-Bold.ttf in Resources */,
 				BBB010A82BAA26DE00D69435 /* PTSansRegular.ttf in Resources */,
 				BB8440922BA765A200111F44 /* Preview Assets.xcassets in Resources */,
@@ -473,11 +491,13 @@
 				BB54D3972BAB712E006AA865 /* ChatHistoryView.swift in Sources */,
 				BB84408B2BA765A100111F44 /* OhoAssessmentApp.swift in Sources */,
 				BB54D39E2BABA077006AA865 /* MessageRow.swift in Sources */,
+				BB4C03132BACBE9600E628F6 /* QRCodeView.swift in Sources */,
 				BBB010B42BAA319C00D69435 /* ChatRoomViewDI.swift in Sources */,
 				BB54D39B2BAB73E5006AA865 /* ChatHistoryViewDI.swift in Sources */,
 				BB8440D72BA8E7AC00111F44 /* Constant.swift in Sources */,
 				BB8440C22BA8C79800111F44 /* ChatRoomModel.swift in Sources */,
 				BB54D3992BAB720B006AA865 /* ChatHistoryViewModel.swift in Sources */,
+				BB4ECD232BACFEF700B6E930 /* QRCodeViewDI.swift in Sources */,
 				BBB010B02BAA302100D69435 /* InfoView.swift in Sources */,
 				BB8440D32BA8E27200111F44 /* ChatRoutes.swift in Sources */,
 			);

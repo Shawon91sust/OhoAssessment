@@ -12,7 +12,6 @@ final class ChatHistoryViewModel: ObservableObject {
 
     // MARK: - Published properties
     @Published private(set) var state = PageState.idle
-    @Published var qrCodeObj: QRCodeObject?
 
     // MARK: - Properties
     enum PageState {
@@ -26,7 +25,7 @@ final class ChatHistoryViewModel: ObservableObject {
     private let chatService: ChatServices
     
 
-    init(service: ChatServices) {
+    init(service: ChatServices = ChatAPI()) {
         self.chatService = service
     }
 
@@ -46,7 +45,8 @@ final class ChatHistoryViewModel: ObservableObject {
             .store(in: &subscriptions)
     }
     
-    func getQrCode(_ id: Int, onCompletion: @escaping () -> Void) {
+    func getQrCode(_ id: Int, onCompletion: @escaping (QRCodeObject) -> Void) {
+        self.state = .loading
         chatService
             .getQrCode(id: id)
             .sink { [weak self] response in
@@ -54,8 +54,7 @@ final class ChatHistoryViewModel: ObservableObject {
                 switch response.result {
                 case let .success(payload):
                     Logger.log("QR code payload:\(payload)")
-                    self.qrCodeObj = payload.data
-                    onCompletion()
+                    onCompletion(payload.data)
                 case let .failure(error):
                     Logger.log("QR error:\(error)")
                     

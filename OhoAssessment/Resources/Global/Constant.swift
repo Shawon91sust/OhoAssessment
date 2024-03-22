@@ -19,6 +19,7 @@ struct Constants {
         static let circularBold = "CircularStd-Bold"
         static let SansBold = "PTSans-Bold"
         static let SansRegular = "PTSans-Regular"
+        static let GrotesqueRegular = "DarkerGrotesque-Regular"
     }
     
     struct Screen {

@@ -23,7 +23,7 @@ struct ChatRoom: Codable {
     }
 }
 
-struct ChatRoomData: Codable, Identifiable {
+struct ChatRoomData: Codable, Identifiable, Equatable {
     let id: Int
     let channelName, status, participants: String
     let createdAt: Int

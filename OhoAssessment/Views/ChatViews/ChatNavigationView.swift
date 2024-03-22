@@ -53,7 +53,7 @@ struct ChatNavigationView: View {
             Text(title)
                 .frame(height: 40)
                 .font(.custom(Constants.Fonts.SansBold, size: 22))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
                 .lineLimit(1)
                 .padding(.leading, 12)
             

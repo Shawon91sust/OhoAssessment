@@ -12,6 +12,7 @@ final class ChatHistoryViewModel: ObservableObject {
 
     // MARK: - Published properties
     @Published private(set) var state = PageState.idle
+    @Published var chatMessage : [ChatMessage] = []
 
     // MARK: - Properties
     enum PageState {
@@ -28,16 +29,23 @@ final class ChatHistoryViewModel: ObservableObject {
     init(service: ChatServices = ChatAPI()) {
         self.chatService = service
     }
+    
+    func refresh(_ id : Int) {
+        state = .idle
+        fetchChatHistory(id)
+    }
 
     // MARK: - Methods
     func fetchChatHistory(_ id : Int) {
+        
         self.state = .loading
         chatService.getChatHistory(id: id)
             .sink { [weak self] response in
                 guard let self = self else { return }
                 switch response.result {
                 case let .success(payload):
-                    self.state = .loaded(payload.data.data)
+                    self.chatMessage = payload.data.data
+                    self.state = .loaded(self.chatMessage)
                 case let .failure(error):
                     self.state = .failed(error)
                 }
@@ -61,5 +69,24 @@ final class ChatHistoryViewModel: ObservableObject {
                 }
             }
             .store(in: &subscriptions)
+    }
+    
+    func addSocketMessage(data:ChatRoomData, socketMessage: SocketMessageModel) {
+        let lastCount = (self.chatMessage.last?.id).safe + 1
+        
+        print("lastCount \(lastCount)")
+        
+        let message = ChatMessage(
+            id: lastCount,
+            body: socketMessage.message,
+            sender: socketMessage.userID,
+            chatID: data.id,
+            chatType: (self.chatMessage.last?.chatType).safe,
+            createdAt: socketMessage.time
+        )
+        
+        chatMessage.append(message)
+        
+        self.state = .loaded(self.chatMessage)
     }
 }

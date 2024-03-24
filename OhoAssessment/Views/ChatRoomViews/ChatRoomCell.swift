@@ -14,65 +14,54 @@ struct ChatRoomCell: View {
     var onLongTap: ()-> Void
     
     var body: some View {
-       
-            Button {
-                onTap()
-            } label: {
-                VStack {
-                    HStack(spacing : 16) {
-                        WebImage(url: URL(string: data.profilePhoto.contains(".jpeg") ? data.profilePhoto : data.profilePhoto + ".jpeg"))
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height: 100)
-                            .clipShape(Circle())
-                            .padding(.leading)
-                        
-                        
-                        VStack(spacing: 0) {
-                            HStack {
-                                Text(data.fullName)
-                                    .font(.custom(Constants.Fonts.SansBold, size: 22))
-                                    .foregroundColor(.black)
-                                    .lineLimit(1)
-                                    .padding(.bottom, 8)
-                                Spacer()
-                            }
-                            .frame(maxWidth : .infinity)
-                            
-                            HStack {
-                                Text(data.lastMessage)
-                                    .font(.custom(Constants.Fonts.SansRegular, size: 22))
-                                    .foregroundColor(.black)
-                                    .lineLimit(1)
-                                
-                                Spacer()
-                            }
-                            .frame(maxWidth : .infinity)
-                            
-                        }
+        
+        VStack {
+            HStack(spacing : 16) {
+                WebImage(url: URL(string: data.profilePhoto.contains(".jpeg") ? data.profilePhoto : data.profilePhoto + ".jpeg"))
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 100, height: 100)
+                    .clipShape(Circle())
+                    .padding(.leading)
+                
+                
+                VStack(spacing: 0) {
+                    HStack {
+                        Text(data.fullName)
+                            .font(.custom(Constants.Fonts.SansBold, size: 22))
+                            .foregroundColor(.black)
+                            .lineLimit(1)
+                            .padding(.bottom, 8)
+                        Spacer()
                     }
-                    .frame(width: Constants.Screen.width)
-                    .padding([.leading, .trailing, .top, .bottom])
-                    .simultaneousGesture(
-                        LongPressGesture()
-                            .onEnded { _ in
-                                onLongTap()
-                            }
-                    )
-                    .highPriorityGesture(
-                        TapGesture()
-                            .onEnded { _ in
-                                onTap()
-                            }
-                    )
+                    .frame(maxWidth : .infinity)
                     
-                    Divider()
+                    HStack {
+                        Text(data.lastMessage)
+                            .font(.custom(Constants.Fonts.SansRegular, size: 22))
+                            .foregroundColor(.black)
+                            .lineLimit(1)
                         
+                        Spacer()
+                    }
+                    .frame(maxWidth : .infinity)
                     
                 }
-                
-                
             }
+            .frame(width: Constants.Screen.width)
+            .padding([.leading, .trailing, .top, .bottom])
+            .onTapGesture {
+                onTap()
+            }
+            .onLongPressGesture(perform: {
+                onLongTap()
+            })
+            
+            
+            Divider()
+            
+            
+        }.frame(width :Constants.Screen.width, height : 146)
     }
 }
 

@@ -17,6 +17,16 @@
 		BB54D39B2BAB73E5006AA865 /* ChatHistoryViewDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54D39A2BAB73E5006AA865 /* ChatHistoryViewDI.swift */; };
 		BB54D39E2BABA077006AA865 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54D39D2BABA077006AA865 /* MessageRow.swift */; };
 		BB54D3A02BABA435006AA865 /* SafeOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54D39F2BABA435006AA865 /* SafeOptional.swift */; };
+		BB754F2C2BAEDCB3003E1703 /* BlockPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB754F2B2BAEDCB3003E1703 /* BlockPopUp.swift */; };
+		BB754F2E2BAEDCBF003E1703 /* ReportPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB754F2D2BAEDCBF003E1703 /* ReportPopUp.swift */; };
+		BB754F302BAF42EB003E1703 /* ChatBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB754F2F2BAF42EB003E1703 /* ChatBottomSheet.swift */; };
+		BB754F322BAF4A16003E1703 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB754F312BAF4A16003E1703 /* CornerRadius.swift */; };
+		BB754F342BAF7B6C003E1703 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB754F332BAF7B6C003E1703 /* SocketManager.swift */; };
+		BB754F372BAF7E7C003E1703 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = BB754F362BAF7E7C003E1703 /* SocketIO */; };
+		BB754F392BB0684A003E1703 /* SocketMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB754F382BB0684A003E1703 /* SocketMessageModel.swift */; };
+		BB754F3C2BB090EB003E1703 /* SSToastMessage in Frameworks */ = {isa = PBXBuildFile; productRef = BB754F3B2BB090EB003E1703 /* SSToastMessage */; };
+		BB754F3F2BB093EC003E1703 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = BB754F3E2BB093EC003E1703 /* SimpleToast */; };
+		BB754F452BB0987E003E1703 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB754F442BB0987E003E1703 /* ToastView.swift */; };
 		BB84408B2BA765A100111F44 /* OhoAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB84408A2BA765A100111F44 /* OhoAssessmentApp.swift */; };
 		BB84408D2BA765A100111F44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB84408C2BA765A100111F44 /* ContentView.swift */; };
 		BB84408F2BA765A200111F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB84408E2BA765A200111F44 /* Assets.xcassets */; };
@@ -77,6 +87,13 @@
 		BB54D39A2BAB73E5006AA865 /* ChatHistoryViewDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryViewDI.swift; sourceTree = "<group>"; };
 		BB54D39D2BABA077006AA865 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		BB54D39F2BABA435006AA865 /* SafeOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeOptional.swift; sourceTree = "<group>"; };
+		BB754F2B2BAEDCB3003E1703 /* BlockPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockPopUp.swift; sourceTree = "<group>"; };
+		BB754F2D2BAEDCBF003E1703 /* ReportPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPopUp.swift; sourceTree = "<group>"; };
+		BB754F2F2BAF42EB003E1703 /* ChatBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBottomSheet.swift; sourceTree = "<group>"; };
+		BB754F312BAF4A16003E1703 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		BB754F332BAF7B6C003E1703 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		BB754F382BB0684A003E1703 /* SocketMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMessageModel.swift; sourceTree = "<group>"; };
+		BB754F442BB0987E003E1703 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		BB8440872BA765A100111F44 /* OhoAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OhoAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB84408A2BA765A100111F44 /* OhoAssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhoAssessmentApp.swift; sourceTree = "<group>"; };
 		BB84408C2BA765A100111F44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,7 +133,10 @@
 			files = (
 				BBB010C02BAA37C500D69435 /* SDWebImageSwiftUI in Frameworks */,
 				BBB010BB2BAA35E500D69435 /* AlertToast in Frameworks */,
+				BB754F3C2BB090EB003E1703 /* SSToastMessage in Frameworks */,
 				BB8440BB2BA8C55B00111F44 /* Alamofire in Frameworks */,
+				BB754F372BAF7E7C003E1703 /* SocketIO in Frameworks */,
+				BB754F3F2BB093EC003E1703 /* SimpleToast in Frameworks */,
 				BB8440BD2BA8C55B00111F44 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +183,16 @@
 				BB54D39D2BABA077006AA865 /* MessageRow.swift */,
 			);
 			path = ChatViews;
+			sourceTree = "<group>";
+		};
+		BB754F2A2BAEDC9A003E1703 /* PopUpViews */ = {
+			isa = PBXGroup;
+			children = (
+				BB754F2B2BAEDCB3003E1703 /* BlockPopUp.swift */,
+				BB754F2D2BAEDCBF003E1703 /* ReportPopUp.swift */,
+				BB754F2F2BAF42EB003E1703 /* ChatBottomSheet.swift */,
+			);
+			path = PopUpViews;
 			sourceTree = "<group>";
 		};
 		BB84407E2BA765A100111F44 = {
@@ -234,6 +264,7 @@
 				BB8440C12BA8C79800111F44 /* ChatRoomModel.swift */,
 				BB8440C32BA8C84800111F44 /* ChatHistoryModel.swift */,
 				BB8440C52BA8C96C00111F44 /* QRCodeModel.swift */,
+				BB754F382BB0684A003E1703 /* SocketMessageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,11 +290,13 @@
 		BB8440B72BA8BE9B00111F44 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB754F2A2BAEDC9A003E1703 /* PopUpViews */,
 				BB4C03112BACBE2500E628F6 /* QRCodeViews */,
 				BB54D3912BAB5A23006AA865 /* ChatViews */,
 				BB54D3902BAB5A05006AA865 /* ChatRoomViews */,
 				BBB010AF2BAA302100D69435 /* InfoView.swift */,
 				BBB010BC2BAA368500D69435 /* LoadingView.swift */,
+				BB754F442BB0987E003E1703 /* ToastView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +318,7 @@
 				BB8440C92BA8D0C700111F44 /* NetworkManager.swift */,
 				BB8440CD2BA8D61E00111F44 /* BaseRequest.swift */,
 				BB8440CB2BA8D0EE00111F44 /* NetworkError.swift */,
+				BB754F332BAF7B6C003E1703 /* SocketManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -303,6 +337,7 @@
 				BB8440D62BA8E7AC00111F44 /* Constant.swift */,
 				BBB010B52BAA33AC00D69435 /* Logger.swift */,
 				BB54D39F2BABA435006AA865 /* SafeOptional.swift */,
+				BB754F312BAF4A16003E1703 /* CornerRadius.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -349,6 +384,9 @@
 				BB8440BC2BA8C55B00111F44 /* AlamofireDynamic */,
 				BBB010BA2BAA35E500D69435 /* AlertToast */,
 				BBB010BF2BAA37C500D69435 /* SDWebImageSwiftUI */,
+				BB754F362BAF7E7C003E1703 /* SocketIO */,
+				BB754F3B2BB090EB003E1703 /* SSToastMessage */,
+				BB754F3E2BB093EC003E1703 /* SimpleToast */,
 			);
 			productName = OhoAssessment;
 			productReference = BB8440872BA765A100111F44 /* OhoAssessment.app */;
@@ -426,6 +464,9 @@
 				BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				BBB010B92BAA35E500D69435 /* XCRemoteSwiftPackageReference "AlertToast" */,
 				BBB010BE2BAA37C500D69435 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				BB754F352BAF7E7C003E1703 /* XCRemoteSwiftPackageReference "socket" */,
+				BB754F3A2BB090EB003E1703 /* XCRemoteSwiftPackageReference "SSToastMessage" */,
+				BB754F3D2BB093EC003E1703 /* XCRemoteSwiftPackageReference "SimpleToast" */,
 			);
 			productRefGroup = BB8440882BA765A100111F44 /* Products */;
 			projectDirPath = "";
@@ -475,8 +516,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB54D3932BAB5A6C006AA865 /* ChatNavigationView.swift in Sources */,
+				BB754F2C2BAEDCB3003E1703 /* BlockPopUp.swift in Sources */,
+				BB754F322BAF4A16003E1703 /* CornerRadius.swift in Sources */,
 				BB8440CE2BA8D61E00111F44 /* BaseRequest.swift in Sources */,
 				BB54D3A02BABA435006AA865 /* SafeOptional.swift in Sources */,
+				BB754F302BAF42EB003E1703 /* ChatBottomSheet.swift in Sources */,
+				BB754F342BAF7B6C003E1703 /* SocketManager.swift in Sources */,
+				BB754F2E2BAEDCBF003E1703 /* ReportPopUp.swift in Sources */,
 				BB8440CA2BA8D0C700111F44 /* NetworkManager.swift in Sources */,
 				BB8440CC2BA8D0EE00111F44 /* NetworkError.swift in Sources */,
 				BB84408D2BA765A100111F44 /* ContentView.swift in Sources */,
@@ -487,6 +533,7 @@
 				BBB010B62BAA33AC00D69435 /* Logger.swift in Sources */,
 				BB8440C42BA8C84800111F44 /* ChatHistoryModel.swift in Sources */,
 				BBB010C22BAA3D5D00D69435 /* ChatRoomCell.swift in Sources */,
+				BB754F392BB0684A003E1703 /* SocketMessageModel.swift in Sources */,
 				BB8440C62BA8C96C00111F44 /* QRCodeModel.swift in Sources */,
 				BB54D3972BAB712E006AA865 /* ChatHistoryView.swift in Sources */,
 				BB84408B2BA765A100111F44 /* OhoAssessmentApp.swift in Sources */,
@@ -496,6 +543,7 @@
 				BB54D39B2BAB73E5006AA865 /* ChatHistoryViewDI.swift in Sources */,
 				BB8440D72BA8E7AC00111F44 /* Constant.swift in Sources */,
 				BB8440C22BA8C79800111F44 /* ChatRoomModel.swift in Sources */,
+				BB754F452BB0987E003E1703 /* ToastView.swift in Sources */,
 				BB54D3992BAB720B006AA865 /* ChatHistoryViewModel.swift in Sources */,
 				BB4ECD232BACFEF700B6E930 /* QRCodeViewDI.swift in Sources */,
 				BBB010B02BAA302100D69435 /* InfoView.swift in Sources */,
@@ -833,6 +881,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BB754F352BAF7E7C003E1703 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		BB754F3A2BB090EB003E1703 /* XCRemoteSwiftPackageReference "SSToastMessage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimformSolutionsPvtLtd/SSToastMessage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		BB754F3D2BB093EC003E1703 /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
 		BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -860,6 +932,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BB754F362BAF7E7C003E1703 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB754F352BAF7E7C003E1703 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+		BB754F3B2BB090EB003E1703 /* SSToastMessage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB754F3A2BB090EB003E1703 /* XCRemoteSwiftPackageReference "SSToastMessage" */;
+			productName = SSToastMessage;
+		};
+		BB754F3E2BB093EC003E1703 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB754F3D2BB093EC003E1703 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
 		BB8440BA2BA8C55B00111F44 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BB8440B92BA8C55B00111F44 /* XCRemoteSwiftPackageReference "Alamofire" */;

@@ -8,12 +8,15 @@
 import SwiftUI
 import AlertToast
 
+
 struct ChatHistoryView: View {
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var viewModel: ChatHistoryViewModel
+    @StateObject var viewModel: ChatHistoryViewModel
     var data: ChatRoomData
     @State private var qrData: QRCodeObject?
     @State private var showQRCodeView = false
+    @State private var chatMsg: String = ""
+    @FocusState private var chatFieldIsFocused
     
     private func qrView(data: QRCodeObject, userName : String) -> some View {
         return QRCodeView(
@@ -50,8 +53,15 @@ struct ChatHistoryView: View {
                         LoadingView()
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                     case .failed(let error):
-                        InfoView(infoMessage: (error.backendError?.error.message).safe)
+                                                
+                        if let backendError = error.backendError {
+                            AlertToast(displayMode: .banner(.slide), type: .regular, title: backendError.error.message, style: AlertToast.AlertStyle.style(backgroundColor: Constants.Colors.toastBG, titleColor: .white, subTitleColor: .white))
+                        } else {
+                            AlertToast(displayMode: .banner(.slide), type: .regular, title: error.initialError.localizedDescription, style: AlertToast.AlertStyle.style(backgroundColor: Constants.Colors.toastBG, titleColor: .white, subTitleColor: .white))
+                        }
+
                     case .loaded(let messages):
+                        
                         List(messages) { message in
                             MessageRow(message: message)
                                 .listRowSeparator(.hidden)
@@ -66,7 +76,40 @@ struct ChatHistoryView: View {
                     }
                 }
                 
+                Spacer()
                 
+                HStack(spacing : 16) {
+                    TextField(
+                            "Message...",
+                            text: $chatMsg
+                    )
+                    .padding(.horizontal)
+                    .frame(height: 65)
+                    .background(
+                        RoundedRectangle(cornerRadius: 40)
+                        .stroke(Color.gray, lineWidth: 1)
+                    )
+                    .focused($chatFieldIsFocused)
+                    .textInputAutocapitalization(.never)
+                    .disableAutocorrection(true)
+                    .padding(.leading)
+                    
+                    Button {
+                        print(chatMsg)
+                        self.hideKeyboard()
+                        SocketHandler.shared.sendChat(roomName: data.channelName, message: chatMsg)
+                        chatMsg = ""
+                    } label: {
+                        Image("Send", bundle: nil)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    .frame(width: 65, height: 65)
+                    .padding(.trailing)
+                    
+                    
+                }
+                .background(.clear)
+
                 if let qrData = qrData {
                     NavigationLink(
                         destination: qrView(data: qrData, userName: data.fullName),
@@ -76,15 +119,41 @@ struct ChatHistoryView: View {
                         })
                     .hidden() // Hide the navigation link initially
                 }
-                
-                
-                
-                
-                
+            }
+            .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+                // Refresh your view's data here
+                print(data.fullName)
+                viewModel.refresh(data.id)
+            }
+            .onTapGesture {
+                self.hideKeyboard()
             }
             .onAppear{
+                
                 viewModel.fetchChatHistory(data.id)
+                
+                
+                SocketHandler.shared.enterChatroom(data.channelName) { message in
+                    if let message = message {
+                        viewModel.addSocketMessage(data: data, socketMessage: message)
+                    }
+                }
+                
+                let socket = SocketHandler.shared.socket
+                
+                socket.on("\(data.id)") { dataArray, ack in
+                    guard let firstElement = dataArray.first as? [String: Any],
+                          let jsonData = try? JSONSerialization.data(withJSONObject: firstElement),
+                          let model = try? JSONDecoder().decode(SocketMessageModel.self, from: jsonData) else {
+                        
+                        return
+                    }
+                    
+                    viewModel.addSocketMessage(data: data, socketMessage: model)
+                }
+                
             }
+            
             
         }
         .navigationBarHidden(true)
@@ -93,6 +162,10 @@ struct ChatHistoryView: View {
         
         
         
+    }
+    
+    private func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 

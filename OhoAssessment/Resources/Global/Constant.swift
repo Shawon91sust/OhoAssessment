@@ -43,6 +43,10 @@ struct Constants {
         static var userBubbleSecondary: Color {
             return Color("UserBubbleSecondary")
         }
+        
+        static var toastBG : Color {
+            return Color("ToastBGColor")
+        }
     }
     
 }

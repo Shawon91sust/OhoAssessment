@@ -15,8 +15,11 @@ struct ChatHistoryView: View {
     var data: ChatRoomData
     @State private var qrData: QRCodeObject?
     @State private var showQRCodeView = false
+    @State private var showToast = true
+    @State private var errMsg : String = ""
     @State private var chatMsg: String = ""
     @FocusState private var chatFieldIsFocused
+    @State private var opacity: Double = 0
     
     private func qrView(data: QRCodeObject, userName : String) -> some View {
         return QRCodeView(
@@ -53,12 +56,7 @@ struct ChatHistoryView: View {
                         LoadingView()
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                     case .failed(let error):
-                                                
-                        if let backendError = error.backendError {
-                            AlertToast(displayMode: .banner(.slide), type: .regular, title: backendError.error.message, style: AlertToast.AlertStyle.style(backgroundColor: Constants.Colors.toastBG, titleColor: .white, subTitleColor: .white))
-                        } else {
-                            AlertToast(displayMode: .banner(.slide), type: .regular, title: error.initialError.localizedDescription, style: AlertToast.AlertStyle.style(backgroundColor: Constants.Colors.toastBG, titleColor: .white, subTitleColor: .white))
-                        }
+                        EmptyView()
 
                     case .loaded(let messages):
                         
@@ -153,6 +151,38 @@ struct ChatHistoryView: View {
                 }
                 
             }
+            .overlay {
+                if showToast {
+                    VStack {
+                        Spacer()
+                        ErrorView(errorTitle: viewModel.errMessage)
+                            .opacity(opacity)
+                            .onAppear {
+                                
+                                    withAnimation(Animation.linear(duration: 1)) {
+                                        opacity = 1 // Increase opacity to 1 over 5 seconds
+                                    }
+                                
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                    withAnimation {
+                                        showToast = false
+                                    }
+                                    
+                                }
+                            }
+                            
+                    }
+                    
+                }
+            }
+            .task {
+                if(!viewModel.errMessage.isEmpty) {
+                    errMsg = viewModel.errMessage
+                    showToast = true
+                }
+                
+            }
+            
             
             
         }

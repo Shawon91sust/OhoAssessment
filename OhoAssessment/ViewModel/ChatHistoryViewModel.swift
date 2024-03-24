@@ -13,6 +13,7 @@ final class ChatHistoryViewModel: ObservableObject {
     // MARK: - Published properties
     @Published private(set) var state = PageState.idle
     @Published var chatMessage : [ChatMessage] = []
+    @Published var errMessage : String = "Test Error"
 
     // MARK: - Properties
     enum PageState {
@@ -39,6 +40,12 @@ final class ChatHistoryViewModel: ObservableObject {
     func fetchChatHistory(_ id : Int) {
         
         self.state = .loading
+        
+//        let bError = BackendError(status: false, error: ErrorInfo(code: 400, message: "Error no data"))
+//        let netError = NetworkError(initialError: .explicitlyCancelled, backendError: bError)
+//        
+//        self.state = .failed(netError)
+        
         chatService.getChatHistory(id: id)
             .sink { [weak self] response in
                 guard let self = self else { return }

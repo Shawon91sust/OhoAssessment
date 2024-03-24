@@ -13,7 +13,7 @@ final class ChatHistoryViewModel: ObservableObject {
     // MARK: - Published properties
     @Published private(set) var state = PageState.idle
     @Published var chatMessage : [ChatMessage] = []
-    @Published var errMessage : String = "Test Error"
+    @Published var errMessage : String = ""
 
     // MARK: - Properties
     enum PageState {

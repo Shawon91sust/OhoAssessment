@@ -84,7 +84,6 @@ struct ChatRoomView: View {
                 }
             }
             .onAppear{
-                SocketHandler.shared.connect()
                 viewModel.fetchChatRooms()
             }
         }
@@ -115,6 +114,7 @@ struct ChatRoomView: View {
             switch newScenePhase {
             case .active:
                 print("App became active")
+                SocketHandler.shared.connect()
             case .inactive, .background:
                 SocketHandler.shared.disconnect()
             @unknown default:
@@ -124,43 +124,9 @@ struct ChatRoomView: View {
         
     }
     
-    func sheetPosition() -> CGPoint {
-        
-        let index = selectedRoomIndex
-        let cellHeight: CGFloat = 160
-        let yOffset = (CGFloat(index + 1) * cellHeight) - CGFloat(index * 12)
-        print(yOffset)
-        return CGPoint(x: 55, y: yOffset)
-    }
 }
 
 #Preview {
     ChatRoomViewDI().chatRoomView
 }
 
-
-struct SheetView: View {
-    @Environment(\.presentationMode) var presentationMode
-    var onBlock: ()-> Void
-    var onReport: ()-> Void
-
-    var body: some View {
-        VStack(alignment: .center, spacing: 10) {
-            Button("Block") {
-                // Action for Button 1
-                presentationMode.wrappedValue.dismiss()
-                onBlock()
-            }
-            
-
-            Button("Report") {
-                // Action for Button 2
-                presentationMode.wrappedValue.dismiss()
-                onReport()
-            }
-        }
-        .padding()
-        .background(Color.white)
-        .border(.black)
-    }
-}

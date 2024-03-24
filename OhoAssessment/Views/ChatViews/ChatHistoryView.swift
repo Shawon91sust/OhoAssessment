@@ -15,7 +15,7 @@ struct ChatHistoryView: View {
     var data: ChatRoomData
     @State private var qrData: QRCodeObject?
     @State private var showQRCodeView = false
-    @State private var showToast = true
+    @State private var showToast = false
     @State private var errMsg : String = ""
     @State private var chatMsg: String = ""
     @FocusState private var chatFieldIsFocused
@@ -155,12 +155,11 @@ struct ChatHistoryView: View {
                 if showToast {
                     VStack {
                         Spacer()
-                        ErrorView(errorTitle: viewModel.errMessage)
+                        ToastView(errorTitle: viewModel.errMessage)
                             .opacity(opacity)
                             .onAppear {
-                                
                                     withAnimation(Animation.linear(duration: 1)) {
-                                        opacity = 1 // Increase opacity to 1 over 5 seconds
+                                        opacity = 1 
                                     }
                                 
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

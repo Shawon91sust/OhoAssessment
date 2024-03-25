@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// Error class for properly delegating errors responsible for abnormal app behavior created by network calls
 struct NetworkError: Error {
   let initialError: AFError
   let backendError: BackendError?

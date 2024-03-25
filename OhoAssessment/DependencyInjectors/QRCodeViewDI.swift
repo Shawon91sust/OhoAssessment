@@ -7,6 +7,11 @@
 
 import Foundation
 
+/// Dependency Injection file for QRCodeView
+///
+/// Dependencies::
+/// - QRCodeData
+/// - Username to show on QRCodeView
 struct QRCodeViewDI {
 
     var qrCodeView: QRCodeView {

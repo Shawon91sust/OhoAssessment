@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// HTTPClient class responsible for API Calls and network operations
 class NetworkManager {
     
     static let manager : Session = {

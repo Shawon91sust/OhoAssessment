@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// Constants file containing app constants, themes and ui configs
 struct Constants {
     static let baseURL         = "https://backend.ohodating.com/api/v1"
     static let socketURL       = "https://chat.backend.ohodating.com"

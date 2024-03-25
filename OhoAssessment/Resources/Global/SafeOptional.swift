@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+/// Interface to safely unwrap variable values.
 public protocol SafeUnwrappable { static func nilValue()->Self }
 
 public extension Optional where Wrapped:SafeUnwrappable {

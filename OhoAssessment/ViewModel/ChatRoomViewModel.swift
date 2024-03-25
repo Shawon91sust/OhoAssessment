@@ -8,12 +8,13 @@
 import Foundation
 import Combine
 
+/// ViewModel Class to bind ChatRoomView with ChatRoomModel
 final class ChatRoomViewModel: ObservableObject {
 
     // MARK: - Published properties
     @Published private(set) var state = PageState.idle
 
-
+    /// ViewState to update view according to viewmodel update
     // MARK: - Properties
     enum PageState {
         case idle
@@ -30,6 +31,9 @@ final class ChatRoomViewModel: ObservableObject {
         self.chatService = service
     }
 
+    /// Method to fetch Chat Rooms
+    ///
+    /// - Returns:  ChatRoomArray or ApiError
     // MARK: - Methods
     func fetchChatRooms() {
         self.state = .loading

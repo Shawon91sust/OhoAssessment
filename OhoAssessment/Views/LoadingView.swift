@@ -8,6 +8,7 @@
 import SwiftUI
 import AlertToast
 
+/// Simple Loader for notifying  network call to user
 struct LoadingView: View {
     
     var body: some View {

@@ -10,17 +10,9 @@ import SwiftUI
 @main
 struct OhoAssessmentApp: App {
     
-    
-    
     var body: some Scene {
         WindowGroup {
             ChatRoomViewDI().chatRoomView
-                
-        }
-        
-        
-        
-        
-        
+        }   
     }
 }

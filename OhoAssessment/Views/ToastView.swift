@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Manually created toast to  show api or network errors
 struct ToastView: View {
     let errorTitle: String
 

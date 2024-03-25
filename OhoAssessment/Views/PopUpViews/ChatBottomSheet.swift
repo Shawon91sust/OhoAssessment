@@ -8,6 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+/// Bottom sheet for blocking or reporting an user
 struct ChatBottomSheet: View {
     @Binding var chatdata : ChatRoomData?
     @Binding var showChatBottomSheet: Bool

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Logging class for debug purposes
 final class Logger {
     static func log(_ text: String) {
         #if DEBUG

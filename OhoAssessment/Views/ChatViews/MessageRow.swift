@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Chat Message View
 struct MessageRow: View {
     var message: ChatMessage
     

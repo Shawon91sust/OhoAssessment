@@ -8,7 +8,7 @@
 import Foundation
 import SocketIO
 
-
+/// Socket Client for handling socket server and updates
 class SocketHandler : ObservableObject{
     
     static let shared = SocketHandler()

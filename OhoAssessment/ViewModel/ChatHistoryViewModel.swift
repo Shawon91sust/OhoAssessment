@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 
+/// ViewModel Class to bind ChatHistoryView with ChatHistoryModel
 final class ChatHistoryViewModel: ObservableObject {
 
     // MARK: - Published properties
@@ -36,6 +37,11 @@ final class ChatHistoryViewModel: ObservableObject {
         fetchChatHistory(id)
     }
 
+    /// Method to fetch Chat History
+    /// - Parameters:
+    ///   - id: Chat_id received from ChatRoomData
+    ///
+    /// - Returns:  ChatHistoryArray or ApiError
     // MARK: - Methods
     func fetchChatHistory(_ id : Int) {
         
@@ -60,6 +66,11 @@ final class ChatHistoryViewModel: ObservableObject {
             .store(in: &subscriptions)
     }
     
+    /// Method to fetch Chat QR Code
+    /// - Parameters:
+    ///   - id: Chat_id received from ChatRoomData
+    ///
+    /// - Returns:  ChatQRObject or ApiError
     func getQrCode(_ id: Int, onCompletion: @escaping (QRCodeObject) -> Void) {
         self.state = .loading
         chatService
@@ -78,6 +89,12 @@ final class ChatHistoryViewModel: ObservableObject {
             .store(in: &subscriptions)
     }
     
+    /// Method to add messages from Socket server
+    /// - Parameters:
+    ///   - data: ChatRoomData
+    ///   - socketMessage : MessageModel received from socket server
+    ///
+    /// Updates chat messages in ChatHistoryView
     func addSocketMessage(data:ChatRoomData, socketMessage: SocketMessageModel) {
         let lastCount = (self.chatMessage.last?.id).safe + 1
         

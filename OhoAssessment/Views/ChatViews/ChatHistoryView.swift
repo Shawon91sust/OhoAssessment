@@ -8,7 +8,9 @@
 import SwiftUI
 import AlertToast
 
-
+/// Chat History View
+/// 
+/// Initiate this view with ChatRoomData from ChatRoom and ChatHistoryViewModel
 struct ChatHistoryView: View {
     @Environment(\.presentationMode) var presentationMode
     @StateObject var viewModel: ChatHistoryViewModel

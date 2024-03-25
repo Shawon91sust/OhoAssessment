@@ -8,6 +8,9 @@
 import SwiftUI
 import AlertToast
 
+/// ChatRoomView
+///
+/// First View that shows available chat rooms. Needs ChatRoomDI to inject dependencies and initiate
 struct ChatRoomView: View {
     @Environment(\.scenePhase) var scenePhase
     @StateObject var viewModel: ChatRoomViewModel

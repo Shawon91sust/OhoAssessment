@@ -8,6 +8,8 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+
+/// Pop up view that shows to block user
 struct BlockPopUp: View {
     @Binding var chatdata : ChatRoomData?
     @Binding var showBlockPopup: Bool

@@ -8,6 +8,8 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+
+/// Chat History Navigation View
 struct ChatNavigationView: View {
     @Environment(\.presentationMode) var presentationMode
 

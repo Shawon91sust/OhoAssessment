@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// BaseRequest interface to facilitate api requests - Injects common configurations to api requests
 protocol BaseRequest: URLRequestConvertible {
     var baseURL: String { get }
     var path: String { get }

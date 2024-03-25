@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/// InfoView
+///
+/// Informative view to show to user when API Fails
 struct InfoView: View {
     
     let infoMessage: String

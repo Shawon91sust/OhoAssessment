@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// Route object to configuring api request parameters
 enum ChatRoutes: BaseRequest {
     
     case chatRoom

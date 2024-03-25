@@ -8,7 +8,11 @@
 import Foundation
 import SwiftUI
 
-
+/// Dependency Injection file for ChatRoomView
+///
+/// Dependencies:
+/// - ChatRoomViewModel
+/// - ChatServies to make api calls
 struct ChatRoomViewDI {
     
     var chatRoomView: ChatRoomView {

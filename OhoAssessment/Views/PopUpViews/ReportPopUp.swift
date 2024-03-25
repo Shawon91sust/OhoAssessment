@@ -8,6 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+/// Pop up view that shows to report user
 struct ReportPopUp: View {
     @Binding var chatdata : ChatRoomData?
     @Binding var showReportPopup: Bool

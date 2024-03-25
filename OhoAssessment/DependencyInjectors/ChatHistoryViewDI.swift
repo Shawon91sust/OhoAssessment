@@ -7,6 +7,12 @@
 
 import Foundation
 
+/// Dependency Injection file for QRCodeView
+///
+/// Dependencies::
+/// - ChatRoomData: Show image, username on navigation view, also to fetch chat history, qr code with id and channel_name for fetching socket channel messages.
+/// - ChatHistoryViewModel
+/// - ChatServies
 struct ChatHistoryViewDI {
     
     private var chatRoomData : ChatRoomData

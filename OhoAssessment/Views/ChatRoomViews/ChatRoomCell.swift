@@ -8,6 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+/// Individual Chat Room View
 struct ChatRoomCell: View {
     var data:ChatRoomData
     var onTap: ()-> Void

@@ -8,7 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-/// Date QR Code View
+/// Chat QR Code View
 struct QRCodeView: View {
     @Environment(\.presentationMode) var presentationMode
     var data: QRCodeObject
